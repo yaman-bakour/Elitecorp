@@ -67,24 +67,6 @@
     background-size: cover;
 }
 
-.carousel-one{
-
-    background-image: url(../imgs/img1.jpg);
-
-}
-
-.carousel-two{
-
-    background-image: url(../imgs/img1.jpg);
-    
-}
-
-.carousel-three{
-
-    background-image: url(../imgs/img1.jpg);
-    
-}
-
 .carousel-indicators li{
     height: 5px !important; 
     cursor: pointer;
@@ -113,10 +95,9 @@
     }
 
     .carousel-inner h1{
-        font-size: 30px;
-        left: auto;
+        font-size: 20px;
+        left: 25px;
         max-width: 100%;
-        text-align: center;
     }
 
 }
@@ -278,20 +259,10 @@ h1 span{
 .featured-work .shuffle-imgs{
     margin-top: 50px;
 }
-
-.featured-work .shuffle-imgs .row{
-    margin: 0px;
-}
-
-.featured-work .shuffle-imgs .row .col-sm{
-    padding: 0px;
-}
-
-.featured-work .shuffle-imgs .row img{
-    width: 100%;
-}
-
-.shuffle-imgs .col-sm{
+    .featured-work .shuffle-imgs .featured-img{
+        height: 250px;
+    }
+.shuffle-imgs .featured-img{
     transition: all 0.5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
@@ -344,7 +315,7 @@ h1 span{
     -o-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    background-image: url(../imgs/img1.jpg);
+    background-image: url(../imgs/fixedslider.jpeg);
     position: relative;
 }
 
@@ -380,12 +351,26 @@ h1 span{
     height: 25px !important;
 }
 
-.testimonials .carousel-caption {
-    top: 40%;
+.testimonials .carousel-caption{
+    top: 20%;
 }
 
 .testimonials .carousel-caption img{
     margin-bottom: 20px;
+    max-height: 170px;
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+@media (max-width : 768px) {
+    .testimonials .carousel-caption img{
+        max-height: 130px;
+    }
+
+    .testimonials .carousel-caption{
+        top: 20%;
+    }
+    
 }
 
 .testimonials .carousel-caption h3{
@@ -394,7 +379,7 @@ h1 span{
 
 .testimonials .carousel-caption span{
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-size: 18px;
 }
 
@@ -470,11 +455,6 @@ h1 span{
     font-size: 20px;
 }
 
-.pricing-table .corporate{
-    position: relative;
-    top: -20px;
-}
-
 .pricing-table .corporate .card-text{
     background-color: #ed1d24;
     color: #fff;
@@ -535,7 +515,7 @@ h1 span{
 }
 
 .stats .stat-box{
-    margin: 100px auto;
+    margin: 50px auto;
 }
 
 .stats i{
@@ -615,8 +595,8 @@ h1 span{
 }
 
 .footer .elite-corp a::before{
-    font-family: 'FontAwesome';
-    content: "\f054";
+    /* font-family: 'FontAwesome';
+    content: "\f054"; */
     font-size: 10px;
     color: #08526d;
     margin-right:4px ;
@@ -629,8 +609,8 @@ h1 span{
 }
 
 .footer .list-group-item::before{
-    font-family: 'FontAwesome';
-    content: "\f054";
+    /* font-family: 'FontAwesome'; */
+    /* content: "\f054"; */
     font-size: 10px;
     color: #08526d;
     margin-right:4px ;
@@ -661,9 +641,7 @@ h1 span{
 }
 
 .copyright ul li{
-    display: inline-block;
-    color: #999;
-    margin-left: 20px;
+    list-style-type: none;
 }
 
 /*end copyright*/

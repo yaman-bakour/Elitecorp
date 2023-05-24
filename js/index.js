@@ -1,9 +1,9 @@
 $(function () {
     'use strict';
-   var winh   = $(window).height(),
+   var winh   = $(window).outerHeight(),
        upperh = $(".upper-bar").innerHeight(),
        navh   = $(".navbar").innerHeight();
-   $(".slider , .carousel-item").height(winh - (upperh + navh));
+   $(".testimonials .slider , .testimonials .carousel-item").height(winh - (upperh + navh));
 
    $(".featured-work .row .col-md").on("click" , function(){
 
