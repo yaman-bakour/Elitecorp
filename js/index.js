@@ -12,7 +12,6 @@ $(function () {
         $(".shuffle-imgs").children().css("display","block");
     }else{
         let imgs = $(".shuffle-imgs").children();
-        console.log($(".shuffle-imgs").children())
         for(let i=0;i<imgs.length ; i++){
             if(imgs[i].id == $(this).attr("data-class")){
                 $(imgs[i]).css("display","none");
