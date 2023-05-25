@@ -14,10 +14,10 @@ $(function () {
         let imgs = $(".shuffle-imgs").children();
         for(let i=0;i<imgs.length ; i++){
             if(imgs[i].id == $(this).attr("data-class")){
-                $(imgs[i]).css("display","none");
+                $(imgs[i]).css("display","block");
             }
             else{
-                $(imgs[i]).css("display","block");
+                $(imgs[i]).css("display","none");
             }
         }
         $($(this).data("class")).parent().css("opacity",1);
