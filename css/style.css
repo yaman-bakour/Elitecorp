@@ -362,7 +362,7 @@ h1 span{
 
 @media (max-width : 480px) {
     .testimonials .carousel-caption img{
-        max-height: 130px;
+        max-height: 80px;
     }
 
     .testimonials .carousel-caption{
