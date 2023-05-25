@@ -8,10 +8,19 @@ $(function () {
    $(".featured-work .row .col-md").on("click" , function(){
 
     $(this).addClass("active").siblings().removeClass("active");
-    if($(this).data("class") === ".all"){
-        $(".shuffle-imgs .row .col-sm").css("opacity",1);
+    if($(this).data("class") === "all"){
+        $(".shuffle-imgs").children().css("display","block");
     }else{
-        $(".shuffle-imgs .col-sm").css("opacity","0.3");
+        let imgs = $(".shuffle-imgs").children();
+        console.log($(".shuffle-imgs").children())
+        for(let i=0;i<imgs.length ; i++){
+            if(imgs[i].id == $(this).attr("data-class")){
+                $(imgs[i]).css("display","none");
+            }
+            else{
+                $(imgs[i]).css("display","block");
+            }
+        }
         $($(this).data("class")).parent().css("opacity",1);
     }
    });
