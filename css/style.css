@@ -360,13 +360,13 @@ h1 span{
     border-radius: 50%;
 }
 
-@media (max-width : 768px) {
+@media (max-width : 480px) {
     .testimonials .carousel-caption img{
         max-height: 130px;
     }
 
     .testimonials .carousel-caption{
-        top: 5%;
+        top: 1%;
     }
     
 }
